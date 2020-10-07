@@ -2,14 +2,15 @@ $(document).ready(function() {
 
     var toggleAffix = function(affixElement, scrollElement, wrapper) {
   
-        var heigh = affixElement.outerHeight(),
+        // var heigh = affixElement.outerHeight(),
         
-            top = wrapper.offset().top;
-            console.log(top);
+        //     top = wrapper.offset().top;
+        //     console.log(top);
         
-        if (scrollElement.scrollTop() >= (top - heigh)){
-            wrapper.height(heigh);
+        if (scrollElement.scrollTop() >= (160)){
+            // wrapper.height(heigh);
             affixElement.addClass("affix");
+            console.log('height')
         }
         else {
             affixElement.removeClass("affix");
@@ -30,5 +31,13 @@ $(document).ready(function() {
         // init
         toggleAffix(ele, $(window), wrapper);
     });
-  
+  // $('#myCarousel').carousel({
+  //     interval: false
+  //   });
+
+
+      
+
+
+
 });
