@@ -4,10 +4,11 @@
       "value":400
     },
     "color":{
-      "value":"#fff"
+      "value":["#fff","#2bd848","#65d82b","#0b7532","#0c631b","#4bd836","#0c6336"]
+
     },
     "shape":{
-      "type":"circle",
+      "type":["circle","traingle","star","polygon"],
       "stroke":{
         "width":1,
         "color":"#ccc"
@@ -17,7 +18,7 @@
       }
     },
     "opacity":{
-      "value":0.5,
+      "value":1,
       "random":true,
       "anim":{
         "enable":false,
@@ -48,7 +49,7 @@
   "interactivity":{
     "events":{
       "onhover":{
-        "enable":true,
+        "enable":false,
         "mode":"repulse"
       },
       "onclick":{
