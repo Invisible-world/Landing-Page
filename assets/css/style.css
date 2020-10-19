@@ -594,7 +594,7 @@ background-color:  black;
 }
 .affix.navbar .nav-item>a,
 .affix.navbar .navbar-brand {
- color: black;
+ color:white;
 }
 /* navbar collapsing */
 @media(max-width:34em) {
@@ -613,16 +613,120 @@ clear:both;
     color: black;
 }
 .nav-link:hover, .navbar-dark .navbar-nav 
-.nav-link:focus {
+ {
+    color: black;
+}
+.nav-link:focus{
     color: white;
 }
 .banner{
-    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0,0.8)),
-    url('../img/Banner1.jpg');
-    background-size: 100%,100%;
-
-  background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,0.7)),
+    url('../img/banner.jpg');
+    /* height: auto; */
+    background-size:cover;
+    object-fit: cover;
+ /* background-image: url(../img/banner.jpg); */
+  /* background-position: right bottom, left top; */
+  background-repeat: no-repeat;
+  /* padding: 15px; */
+ /* background-position: right bottom, left top; */
 
     /* height: 100%; */
     width: 100%;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1); */
+    box-shadow:5px 10px 8px black;
+     border: 1px solid whitesmoke;
+  /* padding: 10px; */
+  /* box-shadow: 5px 10px 8px 10px #888888; */
+   /* box-shadow: 5px 10px 20px black inset; */
 }
+.promotionalBanner{
+    
+/*   background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%), 
+                    linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+                    radial-gradient(gray 2px, transparent 0);
+  background-size: 30px 30px, 30px 30px; */
+  box-shadow:5px 10px 8px black;
+     border: 1px solid whitesmoke;
+
+  position: relative;
+  height: 50vh;
+ /*  box-shadow:5px 10px 8px black;
+     border: 1px solid whitesmoke; */
+  background: #fff;
+  filter: contrast(7);
+/*   --mask: linear-gradient(red, rgba(0, 0, 0, 0.45));
+ */
+--mask: linear-gradient(toright, red, rgba(0, 0, 0, 0.45));
+}
+.promotionalBanner::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(#000, transparent) 0 0/1em 1em space;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  content: "";
+}
+#particles-js{
+    background: yellowgreen;
+    height: 318px;
+    box-shadow:5px 10px 8px black;
+     border: 1px solid whitesmoke;
+}
+#content{
+  background:#fff;
+  opacity:0.7;
+  padding:2em;
+  border:#ccc 2px solid;
+  position:absolute;
+ left: 326px;
+ /* right: 100px; */
+ justify-content: center;
+
+border-radius: 0px;
+
+  margin: auto;
+}
+/* @media  (max-width:1200px) {
+    #content {
+            left: 248px;
+    }
+}
+@media (max-width:990px) {
+    #content {
+            left: 162px;
+    }
+}
+@media (max-width:960px) {
+    #content {
+            left: 146px;
+    }
+}
+@media (max-width:890px) {
+    #content {
+            left: 116px;
+    }
+}
+@media (max-width:830px) {
+    #content {
+            left: 96px;
+    }
+}
+
+@media (max-width:775px) {
+    #content {
+            left: 56px;
+    }
+}
+
+@media (max-width:768px) {
+    #content {
+            left: 06px;
+             padding:1em;
+
+    }
+} */
